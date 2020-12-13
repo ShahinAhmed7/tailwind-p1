@@ -11,12 +11,25 @@
  <!-- NAVBAR COMPONENT -->
  <div class="bg-gray-800 p-3 mb-5">
      <div class="container">
-        <nav class="flex items-center justify-between flex-wrap">
+        <nav class="flex items-center justify-between flex-wrap relative">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
               <span class="font-bold text-xl"><a href="index.html"><img class="h-16 w-16" src="img/img.jpg" alt=""></a></span>
             </div>
         
-            <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+            <!-- Navbar button  -->
+            <div class="absolute top-0 right-0 flex items-center sm:hidden pt-4" id="burger">
+                <!-- Mobile menu button-->
+                <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white border" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Menu open: "hidden", Menu closed: "block"-->
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- Icon when menu is open. -->
+                </button>
+            </div>
+
+            <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto hidden md:flex" id="menu">
               <div class="text-md sm:flex-grow">
                 <a
                   href="#"
@@ -114,5 +127,6 @@
         </div>
       </div>
 
+    <script src="index.js"></script>
 </body>
 </html>
