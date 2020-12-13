@@ -1,0 +1,16 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply font-bold py-2 px-2 rounded;
+}
+
+.btn-custom{
+    @apply bg-blue-500 text-white;
+}
+
+.btn-custom:hover{
+    @apply bg-blue-400;
+}
